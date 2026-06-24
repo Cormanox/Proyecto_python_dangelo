@@ -10,7 +10,7 @@ ventana.config(bg="#424B54")
 
 estilos = ttk.Style(ventana) #darle estilos a los elementos de la ventana)
 estilos.theme_use("classic")
-estilos.configure (ventana, background="#6C7A89", foreground="#102E4A", fieldbackground="#EBF7F7",borderwidth=2, bordercolor="#02F5EF", font=("New York Times", 12, "bold"))
+estilos.configure (ventana, background="#6C7A89", foreground="#102E4A", fieldbackground="#EBF7F7",borderwidth=2, font=("New York Times", 12, "bold"))
 
 ventana.columnconfigure(index=0, weight=1)
 ventana.rowconfigure(index=0, weight=1)
