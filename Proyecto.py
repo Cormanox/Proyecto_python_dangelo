@@ -5,12 +5,12 @@ from tkinter import messagebox
 ventana = tk.Tk()
 ventana.title("Login")
 ventana.geometry("800x800")
-ventana.config(bg="#DDECED")
+ventana.config(bg="#424B54")
 
 
 estilos = ttk.Style(ventana) #darle estilos a los elementos de la ventana)
 estilos.theme_use("classic")
-estilos.configure(ventana, background="#DDECED", foreground="#02F5EF", fieldbackground="#EBF7F7")
+estilos.configure (ventana, background="#6C7A89", foreground="#102E4A", fieldbackground="#EBF7F7",borderwidth=2, bordercolor="#02F5EF", font=("New York Times", 12, "bold"))
 
 ventana.columnconfigure(index=0, weight=1)
 ventana.rowconfigure(index=0, weight=1)
@@ -59,12 +59,12 @@ def paginaprincipal():
     ventanaprincipal = tk.Toplevel() #creamos una ventana y aparece hasta que se llame la funcion
     ventanaprincipal.title("Pagina Principal")
     ventanaprincipal.geometry("800x800")
-    ventanaprincipal.config(bg="#E5C7F2")
+    ventanaprincipal.config(bg="#424B54")
     ventanaprincipal.columnconfigure(index=0, weight=1)
 
     estilos2 = ttk.Style(ventana)
     estilos2.theme_use("clam")
-    estilos2.configure("Treeview",background="#E8A9D0",foreground = "#E6279C",fieldbackground="#E8A9D0",font=("New York Times", 12, "bold"),rowheight=40)
+    estilos2.configure("Treeview",background="#424B54",foreground = "#02F5EF",fieldbackground="#424B54",font=("New York Times", 12, "bold"),rowheight=40)
     estilos2.map("Treeview", background=[("selected","red")],foreground=[("selected","Blue")])
 
 btnIngresar.bind("<Button-1>",ingresar) #llama la funcion cuando le doy click
