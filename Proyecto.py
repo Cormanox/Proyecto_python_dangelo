@@ -67,6 +67,11 @@ def paginaprincipal():
     estilos2.configure("Treeview",background="#424B54",foreground = "#02F5EF",fieldbackground="#424B54",font=("New York Times", 12, "bold"),rowheight=40)
     estilos2.map("Treeview", background=[("selected","red")],foreground=[("selected","Blue")])
 
+    lbltitulo = tk.Label(ventana,text="Principal") #crear un titulo
+    lbltitulo.pack(pady=30) #para mostrar el titulo en la ventana, el paddy para que tenga un espacio
+    lbltitulo.config(bg="#ffff16", fg="Red") #color de la letra y al rededor
+    lbltitulo.config(font=("New York times", 30, "bold")) #tamaño y color
+
 btnIngresar.bind("<Button-1>",ingresar) #llama la funcion cuando le doy click
 btnIngresar.bind("<Return>",ingresar) #llama la funcion cuando precione enter
 
