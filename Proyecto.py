@@ -1,4 +1,4 @@
-import tkinter as tk # Importamos tkinter para armar la interfaz gráfica y lo llamamos tk
+import tkinter as tk # Importamos tkinter para la interfaz gráfica y lo llamamos tk
 from tkinter import ttk, messagebox
 
 # Definimos la ventana para el inicio de sesión
